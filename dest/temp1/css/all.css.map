@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.sass","main.css"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,WAAA;ACCJ","file":"all.css","sourcesContent":["body\r\n    background-color: #eee\r\n    color: #f00\r\n    ","body {\n  background-color: #eee;\n  color: #f00;\n}"]}
