@@ -1,4 +1,36 @@
+// var
+$mainColor : #eee 
+// 
+*
+    box-sizing: border-box
 body
-    background-color: #eee
-    color: #f00
+    font-family: "Work-Sabs", sans-serif
+
+@import 'header'
+.main
+    background-color: $mainColor 
+
+.container
+    padding-left: 15px
+    padding-right: 15px
+    margin-left: auto
+    margin-right: auto
     
+
+@media (min-width: 768px)
+    .container
+        width: 750px 
+
+@media (min-width: 992px) 
+    .container
+        width: 970px
+
+
+@media (min-width: 1200px) 
+    .container
+        width: 1170px
+    
+   
+
+
+
