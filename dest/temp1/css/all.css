@@ -342,6 +342,50 @@ header .links ul li:not(:last-child) {
   border-color: #10cab7;
 }
 
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
+.contact .info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: none;
+  text-align: center;
+}
+.contact .info .lable {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2c4755;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+.contact .info .link {
+  display: block;
+  font-size: 30px;
+  font-weight: 800px;
+  color: #10cab7;
+  text-decoration: none;
+}
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.contact .info .social i {
+  margin-left: 10px;
+  color: #2c4755;
+}
+
+@media (max-width: 767px) {
+  .info .label {
+    font-size: 25px;
+  }
+  .info .link {
+    font-size: 25px;
+  }
+}
 body {
   font-family: "Work-Sabs", sans-serif;
 }

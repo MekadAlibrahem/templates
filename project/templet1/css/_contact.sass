@@ -1,0 +1,38 @@
+.contact
+    @include section($paddingsizeF , $mainColorBG)
+
+    .info
+        @include section($paddingsizeF , none)
+        text-align: center 
+
+        .lable 
+            font-size: 36px
+            font-weight: 800 
+            color: $secondaryColor 
+            letter-spacing: -2px
+            margin-bottom: 15px 
+        .link 
+            display: block 
+            font-size: 30px
+            font-weight: 800px
+            color: $mainColor
+            text-decoration: none 
+        .social 
+            display: flex 
+            justify-content: center
+            margin-top: 20px
+            font-size: 16px 
+            i
+                margin-left: 10px
+                color: $secondaryColor 
+@media (max-width:767px )
+    .info 
+        .label
+            font-size: 25px
+        .link
+            font-size: 25px
+
+
+
+
+
