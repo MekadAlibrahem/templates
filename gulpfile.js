@@ -9,9 +9,9 @@ var sourcemap   = require('gulp-sourcemaps');
 gulp.task('t1-css' , async function(){
     return gulp.src('project/templet1/css/main.sass')
     .pipe(sourcemap.init())
-    .pipe(prefix())
+    
     .pipe(sass())
-    .pipe(concat('all2.css'))
+    .pipe(concat('all.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('dest/temp1/css/'))
     

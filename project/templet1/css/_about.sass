@@ -1,0 +1,75 @@
+.about
+    @include section($paddingsizeF , none)
+
+    .about-items
+        margin-top: $marginSection
+        display: flex
+        flex-wrap: wrap 
+        justify-content: space-between
+        @media (max-width: 991px)
+            flex-direction: column 
+            text-align: center 
+            
+         
+
+        .img 
+            position: relative 
+            width: 250px
+            height: 200px
+            &::after
+                content: ''
+                position: absolute
+                width: 120px 
+                height: 175px 
+                border-left: 70px solid $mainColor
+                border-bottom: 50px solid $mainColor
+                z-index: -1 
+                top: -40px
+                right: -150px  
+            &:before
+                content: ''
+                position: absolute 
+                width: 100px
+                height: calc( 100% + 80px )
+                background-color: $mainColorBG
+                top: -40px
+                left: -20px
+                z-index: -1
+            @media (max-width: 991px)
+                margin: 0 auto 60px
+
+                &::before 
+                    display: none
+                &::after
+                    display: none
+                    
+                     
+                      
+            
+
+            
+            img 
+                max-width: 100%
+        .text 
+            padding-left: 20%
+            flex-basis: calc( 100% - 500px )
+            flex: 1
+            @media (max-width: 991px)
+                padding: 2% 
+
+            p
+                &:first-of-type
+                    font-weight: bold
+                    line-height: $lineHeight
+                    margin-bottom: 50px
+                &:last-of-type
+                    line-height: calc($lineHeight + 0.2) 
+                    color: $pargraphColor
+            hr 
+                width: 50% 
+                display: inline-block 
+                border-color: $mainColor 
+
+
+
+                    
