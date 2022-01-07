@@ -5,9 +5,16 @@
 @import 'landing'
 @import 'features'
 @import 'services'
+@import 'portfolio'
 
 body
     font-family: "Work-Sabs", sans-serif
+.portfolio
+    @include section($paddingsizeF , $mainColorBG)
+    
+    .portfolio-items
+        @include grids(30px)
+        margin-top: 80px 
 
 
     

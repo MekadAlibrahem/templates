@@ -1,8 +1,7 @@
 @import 'variables'
 
 .services
-    padding-top: $paddingsizeF
-    padding-bottom: $paddingsizeF 
+    @include section($paddingsizeF , none) 
 
     .services-items
         @include grids(30px)
@@ -26,7 +25,7 @@
                     margin: 0 0 20px
                 
                 p
-                    color: #777
+                    color: #$pargraphColor
                     font-weight: 300
                     line-height: $lineHeight
             

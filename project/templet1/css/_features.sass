@@ -1,7 +1,6 @@
 @import 'variables'
 .features
-    padding-top: $paddingsizeF 
-    background-color: $mainColorBG
+    @include section($paddingsizeF , $mainColorBG) 
 
     .container 
         @include grids(30px)
@@ -17,7 +16,7 @@
         p
             line-height: $lineHeight 
             font-size: 17px
-            color: #777 
+            color: #$pargraphColor 
 
 
         

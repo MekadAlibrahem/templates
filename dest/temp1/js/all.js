@@ -14,6 +14,7 @@ $(document).ready(function(){
         $("span.icon").children().eq(1).css("width" , "60%" );
     }
    );
+  
 
 
 

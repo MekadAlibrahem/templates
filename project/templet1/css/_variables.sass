@@ -3,12 +3,19 @@ $mainColorBG : #f6f6f6
 $paddingsizeF : 60px
 $lineHeight : 1.8   
 $secondaryColor : #2c4755 
+$pargraphColor :#777
 
 
+    
  
 @mixin grids($gapsize)
     
     display: grid
     grid-template-columns: repeat(auto-fill , minmax(300px ,1fr))
     gap: $gapsize
+      
+@mixin section($padding , $color)
+    padding-top: $padding
+    padding-bottom: $padding 
+    background-color: $color
       

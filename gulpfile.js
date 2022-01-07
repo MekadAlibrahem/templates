@@ -11,7 +11,7 @@ gulp.task('t1-css' , async function(){
     .pipe(sourcemap.init())
     .pipe(prefix())
     .pipe(sass())
-    .pipe(concat('all.css'))
+    .pipe(concat('all2.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('dest/temp1/css/'))
     
